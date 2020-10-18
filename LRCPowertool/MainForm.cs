@@ -319,9 +319,11 @@ Press the status bar if your key presses aren't registering", "Keyboard Help");
             lrc = new SynchronizedLyrics();
             UpdateLRC();
             Unsaved = false;
+            FileName = null;
             lrc.Editor = programName;
             lrc.EditorVersion = Version;
             saveFileDialogLrc.FileName = "";
+            UpdateTitle();
         }
 
         private bool LoadLRCFrom(string fileName)
@@ -636,7 +638,7 @@ Press the status bar if your key presses aren't registering", "Keyboard Help");
             int index = ListViewIndex;
             int line = GetSelectedOutputLine();
             AdjustViaOutputTextBox();
-            if (index >= 0)
+            if (index >= 0 && line >= 0)
             {
                 bool goToPrevious = true;
                 goToPrevious = lrc.GetText(line) != "" || GetListViewItemText(listViewLines.SelectedItems[0]) == "";
@@ -728,7 +730,7 @@ Press the status bar if your key presses aren't registering", "Keyboard Help");
 
         private int GetSelectedOutputLine()
         {
-            if (CaretAtNewLine()) textBoxOutput.SelectionStart += Environment.NewLine.Length;
+            //if (CaretAtNewLine()) textBoxOutput.SelectionStart += Environment.NewLine.Length;
             return textBoxOutput.GetLineFromCharIndex(textBoxOutput.SelectionStart);
         }
 
@@ -1018,7 +1020,10 @@ Press the status bar if your key presses aren't registering", "Keyboard Help");
             else if (mainTabControl.SelectedTab == tabPageMetadata)
                 UpdateLRCMetadataControls();
             else if (mainTabControl.SelectedTab == tabPagePreview)
+            {
                 timerPreviewUpdateElapsed.Start();
+                SelectLRCPreviewLine(lrc.CurrentIndex);
+            }
         }
 
         private void timerPreviewUpdateElapsed_Tick(object sender, EventArgs e)
@@ -1061,6 +1066,7 @@ Press the status bar if your key presses aren't registering", "Keyboard Help");
         private void textBoxOutput_TextChanged(object sender, EventArgs e)
         {
             outputTextBoxValueChanged = true;
+            Unsaved = true;
         }
 
         private void trackBarVolume_Scroll(object sender, EventArgs e)

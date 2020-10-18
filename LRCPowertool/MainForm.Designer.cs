@@ -739,7 +739,7 @@
             this.tabPageMetadata.Controls.Add(this.tableLayoutPanel1);
             this.tabPageMetadata.Location = new System.Drawing.Point(4, 22);
             this.tabPageMetadata.Name = "tabPageMetadata";
-            this.tabPageMetadata.Size = new System.Drawing.Size(646, 516);
+            this.tabPageMetadata.Size = new System.Drawing.Size(716, 516);
             this.tabPageMetadata.TabIndex = 2;
             this.tabPageMetadata.Text = "Metadata";
             this.tabPageMetadata.UseVisualStyleBackColor = true;
@@ -972,7 +972,7 @@
             this.tabPagePreview.Location = new System.Drawing.Point(4, 22);
             this.tabPagePreview.Name = "tabPagePreview";
             this.tabPagePreview.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPagePreview.Size = new System.Drawing.Size(646, 516);
+            this.tabPagePreview.Size = new System.Drawing.Size(716, 516);
             this.tabPagePreview.TabIndex = 1;
             this.tabPagePreview.Text = "Preview";
             this.tabPagePreview.UseVisualStyleBackColor = true;
@@ -987,7 +987,7 @@
             this.textBoxPreviewLyrics.Name = "textBoxPreviewLyrics";
             this.textBoxPreviewLyrics.ReadOnly = true;
             this.textBoxPreviewLyrics.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.textBoxPreviewLyrics.Size = new System.Drawing.Size(640, 510);
+            this.textBoxPreviewLyrics.Size = new System.Drawing.Size(710, 510);
             this.textBoxPreviewLyrics.TabIndex = 0;
             this.textBoxPreviewLyrics.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -997,7 +997,7 @@
             this.tabPageNotepad.Controls.Add(this.toolStripNotepad);
             this.tabPageNotepad.Location = new System.Drawing.Point(4, 22);
             this.tabPageNotepad.Name = "tabPageNotepad";
-            this.tabPageNotepad.Size = new System.Drawing.Size(646, 516);
+            this.tabPageNotepad.Size = new System.Drawing.Size(716, 516);
             this.tabPageNotepad.TabIndex = 3;
             this.tabPageNotepad.Text = "Notepad";
             this.tabPageNotepad.UseVisualStyleBackColor = true;
@@ -1009,7 +1009,7 @@
             this.textBoxNotepad.Location = new System.Drawing.Point(0, 25);
             this.textBoxNotepad.Multiline = true;
             this.textBoxNotepad.Name = "textBoxNotepad";
-            this.textBoxNotepad.Size = new System.Drawing.Size(646, 491);
+            this.textBoxNotepad.Size = new System.Drawing.Size(716, 491);
             this.textBoxNotepad.TabIndex = 0;
             // 
             // toolStripNotepad
@@ -1018,7 +1018,7 @@
             this.toolStripButtonCopyToLyricList});
             this.toolStripNotepad.Location = new System.Drawing.Point(0, 0);
             this.toolStripNotepad.Name = "toolStripNotepad";
-            this.toolStripNotepad.Size = new System.Drawing.Size(646, 25);
+            this.toolStripNotepad.Size = new System.Drawing.Size(716, 25);
             this.toolStripNotepad.TabIndex = 1;
             this.toolStripNotepad.Text = "toolStrip1";
             // 
