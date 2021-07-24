@@ -1174,7 +1174,6 @@
             // timerEditUpdateElapsed
             // 
             this.timerEditUpdateElapsed.Enabled = true;
-            this.timerEditUpdateElapsed.Interval = 20;
             this.timerEditUpdateElapsed.Tick += new System.EventHandler(this.timerEditUpdateElapsed_Tick);
             // 
             // openFileDialogLrc
@@ -1210,7 +1209,7 @@
             // timerPreviewUpdateElapsed
             // 
             this.timerPreviewUpdateElapsed.Enabled = true;
-            this.timerPreviewUpdateElapsed.Interval = 10;
+            this.timerPreviewUpdateElapsed.Interval = 50;
             this.timerPreviewUpdateElapsed.Tick += new System.EventHandler(this.timerPreviewUpdateElapsed_Tick);
             // 
             // MainForm
